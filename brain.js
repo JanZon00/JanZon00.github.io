@@ -124,8 +124,7 @@ function rangeFunction2() {
 function autoPlay() {
 	var v = document.getElementById("interwał").value;
 	console.log(v);	
-	let num2 = v + "000";
-	myInterval = setInterval(rangeFunction, num2);
+	myInterval = setInterval(rangeFunction, v);
 }
 window.addEventListener("keydown", checkKeyPressP, false);
 function checkKeyPressP(key) {
