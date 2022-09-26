@@ -76,6 +76,14 @@ h1{
   display: none;
   padding-left: 355px;
 }
+#Options3 {
+  width: 1057px;
+  height: 150px;
+  position: absolute;
+  text-align: center;
+  display: none;
+  padding-left: 715px;
+}
 #Pomoc {
   position: absolute;
   display: none;
@@ -101,6 +109,17 @@ input[type=text2], select {
 }
 
 .submit-button2{
+  width: 100%;
+  background-color: #CF1300;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button3{
   width: 100%;
   background-color: #CF1300;
   color: white;
