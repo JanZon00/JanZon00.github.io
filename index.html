@@ -20,6 +20,10 @@
   #layout1 {
 	  background-image: url(assets/layout.jpg);
   }
+     a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+   }
   </style>
 
 </head>
@@ -36,9 +40,10 @@
 		<div class="container">
 			<div class="btn-group" style="width:100%">
 				
-			  <button onclick="showOptions()" style="width:33.3%">Wybierz zakres</button>
-			  <button onclick="showOptions2()" style="width:33.3%">Auto-wyświetlanie</button>
-			  <button onclick="rangeFunction2()" style="width:33.3%">Pula do powtórki</button>
+			  <button onclick="showOptions()" style="width:31%">Wybierz zakres</button>
+			  <button onclick="showOptions2()" style="width:31%">Auto-wyświetlanie</button>
+			  <button onclick="rangeFunction2()" style="width:31%">Pula do powtórki</button>
+			  <a href="karty.html" class="karty" style="width:7%">KARTY</a>
 			</div>
 		</div>
 		<div class="container">
@@ -52,8 +57,8 @@
 		</div>
 		<div class="container">
 			<div id="Options2">
-					<input type="text2" id="interwał" name="interwał" placeholder="Interwał (np: 1)">
-					<button onclick="autoPlay()" class="submit-button2" type="submit" id="submitButton2">Potwierdź</button>
+					<input type="text2" id="interwał" name="interwał" placeholder="Interwał (np: 1000 -> 1 sekunda)">
+					<button onclick="autoPlay()" class="submit-button" type="submit" id="submitButton2">Potwierdź</button>
 				 
 			</div>
 		</div>
@@ -74,11 +79,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="small_break2"></div>
 	</div>
   </main>
   <footer>
   </footer>
-<script src="brain.js"></script>
+<script src="numbers.js"></script>
 </div>
 </body>
 </html>

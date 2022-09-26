@@ -69,23 +69,23 @@ h1{
 .btn-group button:hover {
   background-color: #364e79;
 }
-
 /*drop down box*/
 
+
 #Options {
-  width: 380px;
+  width: 350px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
 }
 #Options2 {
-  width: 760px;
+  width: 710px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
-  padding-left: 380px;
+  padding-left: 355px;
 }
 #Pomoc {
   position: absolute;
@@ -123,7 +123,7 @@ input[type=text2], select {
 }
 .submit-button2{
   width: 100%;
-  background-color: #366799;
+  background-color: #CF1300;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -157,6 +157,19 @@ input[type=submit]:hover {
 	margin-right: 5px;
 	padding-top: 20px;
 }
+.pole2{
+	position: relative;
+	bottom: 110px;
+	left: 75px;
+	background-color: #CF1300;
+	border-bottom-color: black;
+	color: white;
+	height: 100px;
+	width: 250px;
+	z-index: 1;
+	margin-right: 5px;
+	padding-top: 20px;
+}
 .help-button{
   width: 70px;
   background-color: #366799;
@@ -164,11 +177,77 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   position: relative;
-  margin-top: 20px;
-  
+  margin-top: 20px; 
+}
+.help-button2{
+  width: 70px;
+  background-color: #CF1300;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px; 
 }
 .small_break{
 	padding-top: 300px;
+}
+.small_break2{
+	padding-top: 100px;
+}
+.small_break3{
+	padding-top: 200px;
+}
+.small_break4{
+	padding-top: 50px;
+}
+.obrazek{
+	border-radius: 12px;
+	max-height: 205px;
+	width: auto;
+}
+.karty{
+	background-color: #CF1300;
+	text-align: center;
+	padding-top: 12px;
+	color: white;
+}
+.liczby{
+	background-color: #366799;
+	text-align: center;
+	padding-top: 12px;
+	color: white;
+}
+.obrazek1{
+	position: absolute;
+	max-height: 205px;
+	width: auto;
+	margin-left: 120px;
+	z-index: 4;
+    border-radius: 8px;
+}
+.obrazek2{
+	position: absolute;
+	max-height: 205px;
+	width: auto;
+	margin-left: 40px;
+	z-index: 3;
+    border-radius: 8px;
+}
+.obrazek3{
+	position: absolute;
+	max-height: 205px;
+	width: auto;
+	margin-right: 40px;
+	z-index: 2;
+    border-radius: 8px;
+}
+.obrazek4{
+	position: absolute;
+	max-height: 205px;
+	width: auto;
+	margin-right: 120px;
+	z-index: 1;
+    border-radius: 8px;
 }
 	
 	

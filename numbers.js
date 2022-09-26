@@ -49,6 +49,8 @@ function getRandomInt(min, max) {
 }
 
 
+
+
 let num;
 var x;
 const numbers = new Set();
@@ -140,19 +142,4 @@ function showOptions2() {
     x.style.display = "block";
   }
 }
-
-
-/*
-  window.addEventListener("keydown", checkKeyPressT, false);
-    function checkKeyPressT(key) {
-	if (key.keyCode == "84") {
-		const Arr = Array.from(numbers);
-		var index = Arr.indexOf(r);
-		if (index !== -1) {
-		  Arr.splice(index, 1);
-		}
-		numbers = new Set(Arr);
-	}
-  }
-*/
 
