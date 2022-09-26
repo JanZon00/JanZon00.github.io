@@ -120,10 +120,6 @@ function rangeFunction(){
 		document.canvas3.src = imagesArray[karta3];
 		document.canvas4.src = imagesArray[karta4];
 	}
-	document.getElementById("demo").innerHTML = karta1;
-	document.getElementById("demo1").innerHTML = karta2;
-	document.getElementById("demo2").innerHTML = karta3;
-	document.getElementById("demo3").innerHTML = karta4;
 }
 
 window.addEventListener("keydown", checkKeyPress, false);
