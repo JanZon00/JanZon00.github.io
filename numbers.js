@@ -65,21 +65,36 @@ function rangeFunction() {
   x.style.cssText  = "font-size:44px;color:white;"
   x = c;
   window.addEventListener("keydown", checkKeyPressR, false);
-  function checkKeyPressR(key) {
-	if (key.keyCode == "82") {
-		numbers.add(x);
-	}
+  function checkKeyPressR(key) {  
+	  if (key.keyCode == "82") {
+		  numbers.add(x);
+	  }
   }
-  if(x < 100 && x >= 10){
-	num = "0" + x;
-	document.getElementById("displayNumber").innerHTML = num;
+
+  if(b <= 99){
+    if(x < 100 && x >= 10){
+      document.getElementById("displayNumber").innerHTML = x;
+      }
+      else if(x < 10 && x >= 0){
+      num = "0" + x;
+      document.getElementById("displayNumber").innerHTML = num;
+    }
   }
-  else if(x < 10 && x >= 0){
-	num = "00" + x;
-	document.getElementById("displayNumber").innerHTML = num;
+  else if(b <= 9){
+    document.getElementById("displayNumber").innerHTML = x;
   }
   else{
-	document.getElementById("displayNumber").innerHTML = x;
+    if(x < 100 && x >= 10){
+    num = "0" + x;
+    document.getElementById("displayNumber").innerHTML = num;
+    }
+    else if(x < 10 && x >= 0){
+    num = "00" + x;
+    document.getElementById("displayNumber").innerHTML = num;
+    }
+    else{
+    document.getElementById("displayNumber").innerHTML = x;
+    }
   }
 }
 
