@@ -71,7 +71,7 @@ function rangeFunction() {
 	  }
   }
 
-  if(b <= 99){
+  if(b <= 99 && b >= 10){
     if(x < 100 && x >= 10){
       document.getElementById("displayNumber").innerHTML = x;
       }
