@@ -62,9 +62,6 @@ h1{
   display: table;
 }
 
-.btn-group button:not(:last-child) {
-  border-right: none;
-}
 
 .btn-group button:hover {
   background-color: #364e79;
@@ -73,19 +70,19 @@ h1{
 
 
 #Options {
-  width: 350px;
+  width: 330px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
 }
 #Options2 {
-  width: 710px;
+  width: 665px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
-  padding-left: 355px;
+  padding-left: 330px;
 }
 #Pomoc {
   position: absolute;

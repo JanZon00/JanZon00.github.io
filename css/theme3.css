@@ -32,6 +32,16 @@ header {
 	margin: auto;
 }
 
+#displayNumber {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #404040;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
 h1{
   color: white;
   font-size: 30px;
@@ -39,7 +49,7 @@ h1{
 }
 
 .btn-group button {
-  background-color: #DE1400;
+  background-color: #404040;
   color: white;
   padding: 10px 24px;
   cursor: pointer;
@@ -52,8 +62,9 @@ h1{
   display: table;
 }
 
+
 .btn-group button:hover {
-  background-color: #BE1100;
+  background-color: black;
 }
 /*drop down box*/
 
@@ -71,15 +82,7 @@ h1{
   position: absolute;
   text-align: center;
   display: none;
-  padding-left: 331px;
-}
-#Options3 {
-  width: 990px;
-  height: 150px;
-  position: absolute;
-  text-align: center;
-  display: none;
-  padding-left: 664px;
+  padding-left: 330px;
 }
 #Pomoc {
   position: absolute;
@@ -105,20 +108,9 @@ input[type=text2], select {
   box-sizing: border-box;
 }
 
-.submit-button2{
+.submit-button{
   width: 100%;
-  background-color: #CF1300;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.submit-button3{
-  width: 100%;
-  background-color: #CF1300;
+  background-color: #366799;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -139,11 +131,11 @@ input[type=submit]:hover {
 	display: flex;
 }
 
-.pole2{
+.pole{
 	position: relative;
 	bottom: 110px;
 	left: 75px;
-	background-color: #CF1300;
+	background-color: #366799;
 	border-bottom-color: black;
 	color: white;
 	height: 100px;
@@ -152,9 +144,9 @@ input[type=submit]:hover {
 	margin-right: 5px;
 	padding-top: 20px;
 }
-.help-button2{
+.help-button{
   width: 70px;
-  background-color: #CF1300;
+  background-color: #404040;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -178,8 +170,8 @@ input[type=submit]:hover {
 	max-height: 205px;
 	width: auto;
 }
-.liczby{
-	background-color: #366799;
+.karty{
+	background-color: #CF1300;
 	text-align: center;
 	padding-top: 12px;
 	color: white;

@@ -14,7 +14,7 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/theme3.css">
   
   <style>
   #layout1 {
@@ -44,22 +44,20 @@
 			  <button onclick="showOptions2()" style="width:29%">Auto-wyświetlanie</button>
 			  <button onclick="rangeFunction2()" style="width:29%">Pula do powtórki</button>
 			  <a href="karty.html" class="karty" style="width:6%">KARTY</a>
-			  <a href="litery.html" class="karty" style="width:7%;background-color:#404040">LITERY</a>
+			  <a href="index.html" class="karty" style="width:7%;background-color:#366799">LICZBY</a>
 			</div>
 		</div>
 		<div class="container">
-			<div id="Options">
-				
-					<input type="text" id="lrange" name="zakresl" placeholder="Zakres lewy (np: 1)">
-					<input type="text" id="rrange" name="zakresr" placeholder="Zakres Prawy (np: 999)">
-					<button onclick="rangeFunction()" class="submit-button" type="submit" id="submitButton">Potwierdź</button>
-				 
+			<div id="Options">	
+					<input type="text" id="lrange" name="zakresl" placeholder="Zakres lewy (np: AB)">
+					<input type="text" id="rrange" name="zakresr" placeholder="Zakres Prawy (np: WU)">
+					<button onclick="rangeFunction()" class="submit-button" type="submit" id="submitButton" style="background-color:#404040">Potwierdź</button> 
 			</div>
 		</div>
 		<div class="container">
 			<div id="Options2">
 					<input type="text2" id="interwał" name="interwał" placeholder="Interwał (np: 1000 -> 1 sekunda)">
-					<button onclick="autoPlay()" class="submit-button" type="submit" id="submitButton2">Potwierdź</button>
+					<button onclick="autoPlay()" class="submit-button" type="submit" id="submitButton" style="background-color:#404040">Potwierdź</button>
 				 
 			</div>
 		</div>
@@ -73,10 +71,10 @@
 		<button onclick="showHelp()" class="help-button">Pomoc</button>
 			<div id="Pomoc">
 				<div class="field">
-				  <div class="pole">Wciskaj strzałkę w prawo, aby pałować losowe liczby</div>
-				  <div class="pole">Będąc w trybie losowych liczb, wciśnij r aby dodać liczbę do puli</div>
-				  <div class="pole">Wciskaj strzałkę w górę, aby pałować cyfry z utworzonej puli</div>
-				  <div class="pole">Wciśnij przycisk 'p' aby przerwać auto-wyświetlanie</div>
+				  <div class="pole" style="background-color:#404040">Wciskaj strzałkę w prawo, aby pałować losowe litery</div>
+				  <div class="pole" style="background-color:#404040">Będąc w trybie losowych liter, wciśnij r aby dodać literę do puli</div>
+				  <div class="pole" style="background-color:#404040">Wciskaj strzałkę w górę, aby pałować litery z utworzonej puli</div>
+				  <div class="pole" style="background-color:#404040">Wciśnij przycisk 'p' aby przerwać auto-wyświetlanie</div>
 				</div>
 			</div>
 		</div>
@@ -85,7 +83,7 @@
   </main>
   <footer>
   </footer>
-<script src="numbers.js"></script>
+<script src="letters.js"></script>
 </div>
 </body>
 </html>
