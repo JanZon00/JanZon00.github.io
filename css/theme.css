@@ -55,6 +55,9 @@ h1{
   cursor: pointer;
   float: left;
 }
+@media screen and (max-width: 800px){
+    .btn-group{ font-size:1.8vw; }
+}
 
 .btn-group:after {
   content: "";
@@ -70,23 +73,26 @@ h1{
 
 
 #Options {
-  width: 330px;
+  float: left;
+  width: 29%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
+  visibility:  hidden;
 }
 #Options2 {
-  width: 665px;
+  float: left;
+  width: 29%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
-  padding-left: 330px;
+  visibility:  hidden;
 }
 #Pomoc {
   position: absolute;
   display: none;
+}
+
+@media screen and (max-width: 800px){
+    input::placeholder{ font-size:3vw; }
 }
 /*################*/
 input[type=text], select {
@@ -118,13 +124,16 @@ input[type=text2], select {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 800px){
+    .submit-button{ font-size:2.2vw; }
+}
 
 input[type=submit]:hover {
   background-color: #364e79;
 }
 /*#########################*/
 .field{
-	width: 100%;
+	max-width: 100%;
 	text-align: center;
 	float: left;
 	transition: 0.3s;
@@ -133,16 +142,21 @@ input[type=submit]:hover {
 
 .pole{
 	position: relative;
-	bottom: 110px;
-	left: 75px;
+	bottom: 140px;
 	background-color: #366799;
 	border-bottom-color: black;
 	color: white;
 	height: 100px;
-	width: 250px;
+	max-width: 250px;
 	z-index: 1;
 	margin-right: 5px;
 	padding-top: 20px;
+}
+@media screen and (max-width: 800px){
+    .pole{ font-size:2.1vw; }
+}
+@media screen and (max-width: 600px){
+    .pole{ font-size:2.3vw; }
 }
 .help-button{
   width: 70px;

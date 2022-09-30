@@ -22,10 +22,10 @@ function showHelp() {
 
 function showOptions() {
   var x = document.getElementById("Options");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
   } else {
-    x.style.display = "block";
+    x.style.visibility = "visible";
   }
 }
 
@@ -131,10 +131,10 @@ function checkKeyPressP(key) {
 }
 function showOptions2() {
   var x = document.getElementById("Options2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
   } else {
-    x.style.display = "block";
+    x.style.visibility = "visible";
   }
 }
 

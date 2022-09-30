@@ -45,6 +45,12 @@ h1{
   cursor: pointer;
   float: left;
 }
+@media screen and (max-width: 800px){
+    input::placeholder{ font-size:3vw; }
+}
+@media screen and (max-width: 800px){
+    .btn-group{ font-size:1.8vw; }
+}
 
 .btn-group:after {
   content: "";
@@ -57,37 +63,33 @@ h1{
 }
 /*drop down box*/
 
-
 #Options {
-  width: 238px;
+  float: left;
+  width: 22%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
+  visibility:  hidden;
 }
 #Options2 {
-  width: 478px;
+  float: left;
+  width: 22%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
-  padding-left: 241px;
+  visibility:  hidden;
 }
 #Options3 {
-  width: 730px;
+  float: left;
+  width: 22%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
-  padding-left: 480px;
+  visibility:  hidden;
 }
 #Options4 {
-  width: 988px;
+  float: left;
+  width: 22%;
   height: 150px;
-  position: absolute;
   text-align: center;
-  display: none;
-  padding-left: 732px;
+  visibility:  hidden;
 }
 #Pomoc {
   position: absolute;
@@ -123,6 +125,9 @@ input[type=text2], select {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 800px){
+    .submit-button2{ font-size:2.2vw; }
+}
 
 .submit-button3{
   width: 100%;
@@ -134,13 +139,16 @@ input[type=text2], select {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 800px){
+    .submit-button3{ font-size:2.2vw; }
+}
 
 input[type=submit]:hover {
   background-color: #364e79;
 }
 /*#########################*/
 .field{
-	width: 100%;
+	max-width: 100%;
 	text-align: center;
 	float: left;
 	transition: 0.3s;
@@ -149,16 +157,21 @@ input[type=submit]:hover {
 
 .pole2{
 	position: relative;
-	bottom: 110px;
-	left: 75px;
+	bottom: 140px;
 	background-color: #CF1300;
 	border-bottom-color: black;
 	color: white;
 	height: 100px;
-	width: 250px;
+	max-width: 250px;
 	z-index: 1;
 	margin-right: 5px;
 	padding-top: 20px;
+}
+@media screen and (max-width: 800px){
+    .pole2{ font-size:2.1vw; }
+}
+@media screen and (max-width: 600px){
+    .pole2{ font-size:2.3vw; }
 }
 .help-button2{
   width: 70px;
