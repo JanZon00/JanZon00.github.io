@@ -59,27 +59,35 @@ h1{
 
 
 #Options {
-  width: 330px;
+  width: 238px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
 }
 #Options2 {
-  width: 665px;
+  width: 478px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
-  padding-left: 331px;
+  padding-left: 241px;
 }
 #Options3 {
-  width: 990px;
+  width: 730px;
   height: 150px;
   position: absolute;
   text-align: center;
   display: none;
-  padding-left: 664px;
+  padding-left: 480px;
+}
+#Options4 {
+  width: 988px;
+  height: 150px;
+  position: absolute;
+  text-align: center;
+  display: none;
+  padding-left: 732px;
 }
 #Pomoc {
   position: absolute;

@@ -59,20 +59,46 @@ var imagesArray = ["deck/1.png", "deck/2.png", "deck/3.png", "deck/4.png", "deck
 function rangeFunction(){
 	var a = document.getElementById("cards").value;
 	console.log(a);
-	if(a == 2){
+	let opcjaEweliny = document.getElementById("submitButton4");
+	let txt = opcjaEweliny.textContent || opcjaEweliny.innerText;
+	if(a == 2 && txt == "Opcja Eweliny"){
 		var karta2;
 		var karta3;
 		
 		karta2 = Math.floor(Math.random() * 52);
 		karta3 = karta2;
 		
-		while(karta3 === karta2){
+		while(karta3 == karta2){
 			karta3 = Math.floor(Math.random() * 52);
 		}
 		document.canvas2.src = imagesArray[karta2];
 		document.canvas3.src = imagesArray[karta3];
 		document.canvas.src = src="blank.jpg";
 		document.canvas4.src = src="blank.jpg";
+	}
+	else if(a == 2 && txt == "Normalnie"){
+		var karta2;
+		var karta3;
+		
+		karta2 = Math.floor(Math.random() * 52);
+		karta3 = karta2;
+		
+		while(karta3 == karta2){
+			karta3 = getRandomInt(40, 51);
+		}
+		var s = getRandomInt(0, 3);
+		if(s == 1){
+		document.canvas2.src = imagesArray[karta2];
+		document.canvas3.src = imagesArray[karta3];
+		document.canvas.src = src="blank.jpg";
+		document.canvas4.src = src="blank.jpg";
+		}
+		else{
+		document.canvas2.src = imagesArray[karta3];
+		document.canvas3.src = imagesArray[karta2];
+		document.canvas.src = src="blank.jpg";
+		document.canvas4.src = src="blank.jpg";
+		}
 	}
 	else if(a == 3){
 		var karta1;
@@ -189,6 +215,14 @@ function showOptions3() {
     x.style.display = "block";
   }
 }
+function showOptions4() {
+  var x = document.getElementById("Options4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 let waskie = 0;
 function changeBorder() {
@@ -220,3 +254,13 @@ btn.addEventListener('click', () =>{
   changeBorder();
 });
 
+let btn2 = document.getElementById('submitButton4');
+let index2 = 0;
+
+const texts2 = ['Normalnie', 'Opcja Eweliny'];
+
+btn2.addEventListener('click', () =>{
+	btn2.innerText = texts2[index2];
+  index2 = index2 >= texts2.length - 1 ? 0 : index2 + 1;
+  rangeFunction();
+});
