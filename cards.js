@@ -71,10 +71,12 @@ function rangeFunction(){
 		while(karta3 == karta2){
 			karta3 = Math.floor(Math.random() * 52);
 		}
-		document.canvas2.src = imagesArray[karta2];
-		document.canvas3.src = imagesArray[karta3];
-		document.canvas.src = src="blank.jpg";
-		document.canvas4.src = src="blank.jpg";
+		if(karta2 != karta3){
+			document.canvas2.src = imagesArray[karta2];
+			document.canvas3.src = imagesArray[karta3];
+			document.canvas.src = src="blank.jpg";
+			ocument.canvas4.src = src="blank.jpg";
+		}
 	}
 	else if(a == 2 && txt == "Normalnie"){
 		var karta2;
@@ -86,18 +88,20 @@ function rangeFunction(){
 		while(karta3 == karta2){
 			karta3 = getRandomInt(40, 51);
 		}
-		var s = getRandomInt(0, 3);
-		if(s == 1){
-		document.canvas2.src = imagesArray[karta2];
-		document.canvas3.src = imagesArray[karta3];
-		document.canvas.src = src="blank.jpg";
-		document.canvas4.src = src="blank.jpg";
-		}
-		else{
-		document.canvas2.src = imagesArray[karta3];
-		document.canvas3.src = imagesArray[karta2];
-		document.canvas.src = src="blank.jpg";
-		document.canvas4.src = src="blank.jpg";
+		if(karta2 != karta3){
+			var s = getRandomInt(0, 3);
+			if(s == 1){
+			document.canvas2.src = imagesArray[karta2];
+			document.canvas3.src = imagesArray[karta3];
+			document.canvas.src = src="blank.jpg";
+			document.canvas4.src = src="blank.jpg";
+			}
+			else{
+			document.canvas2.src = imagesArray[karta3];
+			document.canvas3.src = imagesArray[karta2];
+			document.canvas.src = src="blank.jpg";
+			document.canvas4.src = src="blank.jpg";
+			}
 		}
 	}
 	else if(a == 3){
@@ -117,9 +121,11 @@ function rangeFunction(){
 		while(karta3 == karta1 || karta3 == karta2){
 			karta3 = Math.floor(Math.random() * 52);
 		}
-		document.canvas.src = imagesArray[karta1];
-		document.canvas2.src = imagesArray[karta2];
-		document.canvas3.src = imagesArray[karta3];
+		if(karta2 != karta1 && karta3 != karta1 && karta3 != karta2){
+			document.canvas.src = imagesArray[karta1];
+			document.canvas2.src = imagesArray[karta2];
+			document.canvas3.src = imagesArray[karta3];
+		}
 	}
 	else{
 		var karta1;
@@ -141,10 +147,12 @@ function rangeFunction(){
 		while(karta4 == karta1 || karta4 == karta2 || karta4 == karta3){
 			karta4 = Math.floor(Math.random() * 52);
 		}
-		document.canvas.src = imagesArray[karta1];
-		document.canvas2.src = imagesArray[karta2];
-		document.canvas3.src = imagesArray[karta3];
-		document.canvas4.src = imagesArray[karta4];
+		if(karta2 != karta1 && karta3 != karta1 && karta3 != karta2 && karta4 != karta1 && karta4 != karta2 && karta4 != karta3){
+			document.canvas.src = imagesArray[karta1];
+			document.canvas2.src = imagesArray[karta2];
+			document.canvas3.src = imagesArray[karta3];
+			document.canvas4.src = imagesArray[karta4];
+		}
 	}
 }
 
