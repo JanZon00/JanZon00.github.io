@@ -1,0 +1,40 @@
+.site{
+    height: 0vh;
+}
+.sidebar-numbers{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 535px;
+    max-width: 300px;
+    width: 300px;
+    background-color: #366799;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    transition-duration: 0.8s;
+    border-radius: 10px;
+}
+.sidebar-number-nav{
+    margin-top: 5px;  
+    height: 100px;
+    max-width: 280px;
+    color: white;
+    line-height: 100px;
+    display: block;
+}
+.btnnumber:hover{
+    background-color: #1d4c7a;
+}
+.sidebar-number-nav:hover{
+    background-color: rgb(58, 58, 58);
+}
+.btnnumber, .btnnumber2{
+    width: 100%;
+    border-radius: 10px;
+    height: 90px;
+    margin-top: 30px;
+    background-color: #c2c2c2;
+    text-align: center;
+    display: block;
+}
