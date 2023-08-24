@@ -244,7 +244,7 @@ input[type=submit]:hover {
 .button-right::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 17px;
   z-index: 11;
   display: block;
   width: 30px;
