@@ -79,12 +79,18 @@ function displayFunction() {
   }
 
   if (norepeat) toggleText();
+  display.style.cssText = "font-size:40px;color:white;overflow:auto;margin: 0 auto;line-height: 1.2;";
+  if (window.innerWidth > 768) {
+    display.style.width = "30%";
+  } else {
+    display.style.width = "80%";
+  }
 
-  display.style.cssText = "font-size:40px;color:white;overflow:auto;width:30%;margin: 0 auto;line-height: 1.2;";
   display.innerHTML = binaryBlocks;
 
   updateDisplayHeight(b);
 }
+
 
 function updateDisplayHeight(rrange) {
   const display = document.getElementById("displayNumber");
