@@ -34,10 +34,10 @@ header {
 
 #displayNumber {
   width: 200px;
-  height: 100px;
+  height: 85px;
   text-align: center;
   margin: 0 auto;
-  background-color: #404040;
+  background-color: #e67d00;
   padding: 15px 0;
   border-radius: 10px;
 }
@@ -47,11 +47,9 @@ h1{
   font-size: 30px;
   font-weight: 600;
 }
-@media screen and (max-width: 800px){
-    input::placeholder{ font-size:3vw; }
-}
+
 .btn-group button {
-  background-color: #404040;
+  background-color: #e67d00;
   color: white;
   padding: 10px 24px;
   cursor: pointer;
@@ -69,7 +67,7 @@ h1{
 
 
 .btn-group button:hover {
-  background-color: black;
+  background-color: #d55300;
 }
 /*drop down box*/
 
@@ -88,9 +86,14 @@ h1{
   text-align: center;
   visibility:  hidden;
 }
+
 #Pomoc {
   position: absolute;
   display: none;
+}
+
+@media screen and (max-width: 800px){
+    input::placeholder{ font-size:3vw; }
 }
 /*################*/
 input[type=text], select {
@@ -114,7 +117,7 @@ input[type=text2], select {
 
 .submit-button{
   width: 100%;
-  background-color: #366799;
+  background-color: #e67d00;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -141,7 +144,7 @@ input[type=submit]:hover {
 .pole{
 	position: relative;
 	bottom: 140px;
-	background-color: #366799;
+	background-color: #e67d00;
 	border-bottom-color: black;
 	color: white;
 	height: 100px;
@@ -158,7 +161,7 @@ input[type=submit]:hover {
 }
 .help-button{
   width: 70px;
-  background-color: #404040;
+  background-color: #e67d00;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -169,7 +172,12 @@ input[type=submit]:hover {
 	padding-top: 300px;
 }
 .small_break2{
-	padding-top: 100px;
+	padding-top: 250px;
+}
+@media (max-width: 500px) {
+	.small_break2{
+		padding-top: 150px;
+	}
 }
 .small_break3{
 	padding-top: 200px;
@@ -184,6 +192,12 @@ input[type=submit]:hover {
 }
 .karty{
 	background-color: #CF1300;
+	text-align: center;
+	padding-top: 12px;
+	color: white;
+}
+.liczby{
+	background-color: #366799;
 	text-align: center;
 	padding-top: 12px;
 	color: white;
@@ -219,6 +233,38 @@ input[type=submit]:hover {
 	margin-right: 120px;
 	z-index: 1;
     border-radius: 8px;
+}
+
+.button-right {
+  display: none; 
+  position: relative;
+  padding: 5px;
+  margin: 30px auto;
+  background: #FFA500;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.button-right::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  z-index: 11;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  left: 10px;
+}
+
+@media (max-width: 500px) {
+  .button-right {
+    display: block;
+  }
 }
 	
 	
