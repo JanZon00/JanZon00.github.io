@@ -1,4 +1,9 @@
-
+function preloadImages(imageArray) {
+    imageArray.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
 
 function showOnClick() {
   var x = document.getElementById("displayNumber");
@@ -57,6 +62,7 @@ const numbers = new Set();
 var imagesArray = ["deck/1.png", "deck/2.png", "deck/3.png", "deck/4.png", "deck/5.png", "deck/6.png", "deck/7.png", "deck/8.png", "deck/9.png", "deck/10.png", "deck/11.png", "deck/12.png", "deck/13.png", "deck/14.png", "deck/15.png", "deck/16.png", "deck/17.png", "deck/18.png", "deck/19.png", "deck/20.png", "deck/21.png", "deck/22.png", "deck/23.png", "deck/24.png", "deck/25.png", "deck/26.png", "deck/27.png", "deck/28.png", "deck/29.png", "deck/30.png", "deck/31.png", "deck/32.png", "deck/33.png", "deck/34.png", "deck/35.png", "deck/36.png", "deck/37.png", "deck/38.png", "deck/39.png", "deck/40.png", "deck/41.png", "deck/42.png", "deck/43.png", "deck/44.png", "deck/45.png", "deck/46.png", "deck/47.png", "deck/48.png", "deck/49.png", "deck/50.png", "deck/51.png", "deck/52.png"];
 
 function rangeFunction(){
+	preloadImages(imagesArray);
 	var a = document.getElementById("cards").value;
 	console.log(a);
 	let opcjaEweliny = document.getElementById("submitButton4");
