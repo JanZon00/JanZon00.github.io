@@ -237,6 +237,38 @@ input[type=submit]:hover {
 	z-index: 1;
     border-radius: 8px;
 }
+
+.button-right {
+  display: none; 
+  position: relative;
+  padding: 5px;
+  margin: 30px auto;
+  background: #CF1300;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.button-right::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  z-index: 11;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  left: 10px;
+}
+
+@media (max-width: 500px) {
+  .button-right {
+    display: block;
+  }
+}
 	
 	
 	
