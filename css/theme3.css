@@ -87,6 +87,14 @@ h1{
   visibility:  hidden;
 }
 
+#Options3 {
+  float: left;
+  width: 29%;
+  height: 150px;
+  text-align: center;
+  visibility:  hidden;
+}
+
 #Pomoc {
   position: absolute;
   display: none;
@@ -265,6 +273,23 @@ input[type=submit]:hover {
   .button-right {
     display: block;
   }
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+#ExtraOption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: none;
 }
 	
 	

@@ -1,4 +1,15 @@
 let isBlack = true;
+let repeatDigit = null; 
+
+function powtarzanieFunction() {
+  repeatDigit = parseInt(document.getElementById("powtarzanie").value);
+  if (isNaN(repeatDigit) || repeatDigit < 0 || repeatDigit > 7) {
+    alert("Wprowadź liczbę od 0 do 7 lub odśwież stronę żeby zresetować.");
+    repeatDigit = null;
+    return;
+  }
+  displayFunction(); // Wyświetl wyniki natychmiast po wprowadzeniu wartości
+}
 
 function toggleColor() {
   const button = document.getElementById('colorButton');
@@ -24,6 +35,11 @@ function showHelp() {
 
 function showOptions() {
   const options = document.getElementById("Options");
+  options.style.visibility = options.style.visibility === "visible" ? "hidden" : "visible";
+}
+
+function showOptions3() {
+  const options = document.getElementById("Options3");
   options.style.visibility = options.style.visibility === "visible" ? "hidden" : "visible";
 }
 
@@ -73,9 +89,17 @@ function rangeFunction2() {
 function displayFunction() {
   const display = document.getElementById("displayNumber");
   let binaryBlocks = '';
+
   for (let i = 0; i < b; i++) {
-    const binaryBlock = getRandomBinary(a);
-    binaryBlocks += `<div style="display:inline-block;width:30px;text-align:center;margin-right:5px;">${binaryBlock.split('').join('</div><div style="display:inline-block;width:30px;text-align:center;margin-right:5px;">')}</div><br>`; 
+    let binaryBlock;
+
+    if (i === 0 && repeatDigit !== null && a === 3 && b === 3) {
+      binaryBlock = repeatDigit.toString(2).padStart(a, '0');
+    } else {
+      binaryBlock = getRandomBinary(a);
+    }
+
+    binaryBlocks += `<div style="display:inline-block;width:30px;text-align:center;margin-right:5px;">${binaryBlock.split('').join('</div><div style="display:inline-block;width:30px;text-align:center;margin-right:5px;">')}</div><br>`;
   }
 
   if (norepeat) toggleText();

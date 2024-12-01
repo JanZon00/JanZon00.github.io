@@ -42,7 +42,7 @@
 				
 			  <button onclick="showOptions()" style="width:29%">Wybierz zakres</button>
 			  <button onclick="showOptions2()" style="width:29%">Auto-wyświetlanie</button>
-			  <button style="width:29%"></button>
+			  <button onclick="showOptions3()" style="width:29%">Blok 3x3 powtarzanie</button>
 			  <a href="karty.html" class="karty" style="width:6%">KARTY</a>
 			  <a href="index.html" class="liczby" style="width:7%;background-color:#366799">LICZBY</a>
 			</div>
@@ -60,6 +60,11 @@
 					<input type="text2" id="interwał" name="interwał" placeholder="Interwał (np: 1000 -> 1 sekunda)">
 					<button onclick="autoPlay()" class="submit-button" type="submit" id="submitButton2">Potwierdź</button>
 				 
+			</div>
+			
+			<div id="Options3">
+					<input type="text" id="powtarzanie" name="powtarzanie" placeholder="Powtarzanie cyfr (dla 3x3)">
+					<button onclick="powtarzanieFunction()" class="submit-button" type="submit" id="submitButton">Potwierdź</button>
 			</div>
 
 			<div class="center-position">
